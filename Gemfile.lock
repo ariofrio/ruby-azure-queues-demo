@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    mime-types (1.17.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    ruby-hmac (0.4.0)
+    waz-storage (1.1.1)
+      rest-client
+      ruby-hmac
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  waz-storage
