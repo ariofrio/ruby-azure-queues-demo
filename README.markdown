@@ -2,12 +2,12 @@
 
 I was going to use rest_client and xmlsimple for this demo, but Azure
 authentication is kind of a pain (basically, canonicalize the request, sign
-it, and add the signature in the Authentication header). So I used
-[waz-storage][] instead (here is their 
-[implementation of the authentication scheme][impl]).
+it, and add the signature in the Authentication header, see [official documentation][]). So I used
+[waz-storage][] instead. See `generate_signature` in [their implementation][].
 
+  [official documentation]: http://msdn.microsoft.com/en-us/library/windowsazure/dd179428.aspx
   [waz-storage]: https://github.com/johnnyhalife/waz-storage
-  [impl]: https://github.com/johnnyhalife/waz-storage/blob/master/lib/waz/storage/core_service.rb
+  [their implementation]: https://github.com/johnnyhalife/waz-storage/blob/master/lib/waz/storage/core_service.rb
 
 There are similar libraries for Java ([a tutorial][java]) and Python ([winazurestorage][python]).
 
