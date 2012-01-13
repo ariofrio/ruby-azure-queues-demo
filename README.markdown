@@ -28,8 +28,8 @@ the right should allow you to obtain it. Use the primary key ([here is why][keys
 	gem install bundler
 	bundle install
 
-	echo AZURE_STORAGE_ACCOUNT_NAME=account-name >> credentials.sh
-	echo AZURE_STORAGE_ACCESS_KEY=access-key >> credentials.sh
+	echo export AZURE_STORAGE_ACCOUNT_NAME=account-name >> credentials.sh
+	echo export AZURE_STORAGE_ACCESS_KEY=access-key >> credentials.sh
 	. credentials.sh
 
 	bundle exec ruby demo.rb
