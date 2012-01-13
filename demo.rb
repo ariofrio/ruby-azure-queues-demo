@@ -9,11 +9,13 @@ puts "making sure queue exists"
 queue = WAZ::Queues::Queue.ensure('my-demo-queue')
 puts "querying size of queue: " + queue.size.to_s
 
-puts "putting message into queue" and queue.enqueue! "hey this is my message"
+puts "putting message into queue"
+queue.enqueue! "hey this is my message"
 puts "querying size of queue: " + queue.size.to_s
 
 puts "pulling message from queue: " + (message = queue.lock).message_text
 puts "querying size of queue: "  + queue.size.to_s
 
-puts "deleting message from queue" and message.destroy!
+puts "deleting message from queue"
+message.destroy!
 puts "querying size of queue: "  + queue.size.to_s
